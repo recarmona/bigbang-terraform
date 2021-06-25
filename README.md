@@ -43,6 +43,7 @@ $ terraform apply
 
 After terraform apply finish 3 min later apply this (its a fix to a gatekeeper on GCP): 
 
+```bash
 $ cat << EOF | kubectl apply -f=-
 apiVersion: v1
 kind: ResourceQuota
